@@ -31,18 +31,12 @@ body {
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 input.defaultCheckbox {
   color: white;
 }
 
 input.defaultCheckbox::before {
-  content: url("data:Image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns= 'http://www.w3.org/2000/svg'%3E%3Cpath d= M6.66662 10.115L12.7946 3.98633L13.7379 4.92899L6.66662 12.0003L2.42395 7.75766L3.36662 6.81499L6.66662 10.115Z' fill=white/%3E%3C/svg%3E%0A");
+  content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.66662 10.115L12.7946 3.98633L13.7379 4.92899L6.66662 12.0003L2.42395 7.75766L3.36662 6.81499L6.66662 10.115Z' fill='white'/%3E%3C/svg%3E%0A");
   fill: currentColor;
   opacity: 0;
   height: 16px;
@@ -54,7 +48,7 @@ input.defaultCheckbox::before {
 }
 
 input.defaultCheckbox::before path {
-  fill: currentcolor;
+  fill: currentColor;
 }
 
 input:checked.defaultCheckbox::before {
@@ -67,12 +61,12 @@ input:checked.defaultCheckbox::before {
 
 @keyframes slide_anim {
   from {
-    transform: translate(50px);
+    transform: translateX(50px);
     opacity: 0.4;
   }
 
   to {
-    transform: translatex (0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
